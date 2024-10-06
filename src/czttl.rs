@@ -6,6 +6,8 @@ pub mod input_output {
     use std::thread;
     use std::time::Duration;
 
+
+    // Takes a path to a file as a string and returns the content of the file as a string.
     // Reads the content of the file at the provided path as a String.
     // If the file is valid UTF-8, its content is returned.
     // If the file is not valid UTF-8, an error message is returned instead of panicking.
@@ -18,6 +20,8 @@ pub mod input_output {
         }
     }
 
+
+    // Takes a string and prints it character by character with a delay between each character.
     // Clears the terminal screen and resets the cursor position to the top-left (0, 0).
     // Uses ANSI escape codes to clear the screen and move the cursor.
     // Works in most modern terminals without requiring any external dependencies.
@@ -27,6 +31,8 @@ pub mod input_output {
         stdout().flush().expect("Error occurred in clear_terminal function");
     }
 
+
+    // takes text {input_string} and prints it character by character 
     // Prints the provided string character by character with a delay between each character.
     // The delay is based on the input_time in milliseconds.
     // For whitespace characters (spaces and tabs), the delay is halved to improve reading speed.
